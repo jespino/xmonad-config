@@ -42,6 +42,7 @@ main = do
   dzen <- spawnPipe myStatusBar
   conky <- spawnPipe conkyBar
   xbindkeys <- spawnPipe "xbindkeys"
+  xsetroot <- spawnPipe "xsetroot -cursor_name left_ptr"
   xmonad $ myUrgencyHook $ defaultConfig
 
     { terminal           = myTerminal
