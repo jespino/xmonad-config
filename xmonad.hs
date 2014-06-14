@@ -13,6 +13,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.UrgencyHook
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Layout.ComboP
 import XMonad.Layout.LayoutCombinators hiding ((|||))
 import XMonad.Layout.LayoutHints
@@ -70,7 +71,7 @@ myWorkspaces = ["1:devel", "2:www", "3:compile", "4:misc", "5:vbox", "6:6", "7:7
 myNormalBorderColor = "#0f0f0f"
 myFocusedBorderColor = "#1f1f1f"
 
-myEventHook = mempty
+myEventHook = fullscreenEventHook
 myStartupHook = return ()
 
 -- Color, font and iconpath definitions:
