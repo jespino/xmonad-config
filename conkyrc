@@ -18,6 +18,7 @@ ${if_existing /proc/net/route eth0}\
 ${endif}\
 ^fg(\#ffffff) ^i(/home/jespino/.xmonad/dzen/cpu.xbm) ${cpu}% \
 ^fg(\#ffffff) ^i(/home/jespino/.xmonad/dzen/mem.xbm) ${memperc}% \
-^fg(\#ebac54) ^i(/home/jespino/.xmonad/dzen/battery.xbm) ${battery} \
+^fg(\#ebac54) ^i(/home/jespino/.xmonad/dzen/battery.xbm) ${battery BAT0} \
+^fg(\#ebac54) ^i(/home/jespino/.xmonad/dzen/battery.xbm) ${battery BAT1} \
 ^fg(\#ebac54) ^i(/home/jespino/.xmonad/dzen/volume.xbm) ^fg(\#00ffff)${exec amixer get Master | egrep -o "[0-9]+%" | head -1 | egrep -o "[0-9]*"}% \
 ^fg(\#ebac54) ^i(/home/jespino/.xmonad/dzen/clock.xbm) ^fg(\#FFFFFF) ${time %d %m %y} ^fg(\#ebac54) ${time %R}
